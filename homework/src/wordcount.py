@@ -3,7 +3,6 @@
 
 
 import argparse
-import sys
 
 from homework.src._internals.read_all_lines import read_all_lines
 
@@ -36,7 +35,7 @@ def count_words(words):
     pass
 
 
-def write_word_count(output_folder, word_count):
+def write_word_counts(output_folder, word_counts):
     pass
 
 
@@ -45,5 +44,5 @@ def main():
     lines = read_all_lines(input_folder)
     preprocessed_lines = preprocess_lines(lines)
     words = split_into_words(preprocessed_lines)
-    word_count = count_words(words)
-    write_word_count(output_folder, word_count)
+    word_counts = count_words(words)
+    write_word_counts(output_folder, word_counts)
